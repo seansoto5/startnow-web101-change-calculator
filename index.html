@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    </head>
+    <body>
+      <section class = "hero is-small is-primary is-bold">
+        <div class = "hero-body">
+          <div class = "container">
+            <h1 class = "title is-1">
+              Change Calculator
+            </h1>
+            <h2 class = "subtitle is 2">
+              Let the computer do it FOR you! Lazy slack!
+            </h2>
+          </div>
+        </div>
+      </section>
+      <br>
+
+      <div class="container">
+        <div class="block">
+          <div class="columns">
+            <div class="column">
+            <p>How much is due for the sale?</p>
+            <input id = "amount-due" type = "text" onfocus="this.value=''" placeholder = "Enter Amount Due"/>
+            </div>
+          <div class="column">
+            <p>How much has the customer given you?</p>
+            <input id = "amount-received" type = "text" onfocus="this.value=''" placeholder = "Enter Amount Paid"/>
+            </div>
+          <div class="column">
+            <button class = "button is-info is-outlined" id ="calculate-change" onclick = "calculateChange()">Calculate Change</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="container">
+          <div class="block">
+              <p class = "notification is-large" id = "message">Let's Calculate!</p><br>
+          </div>
+        </div>
+
+         <div class="container">
+            <div class="columns">
+              <div class="column">
+                <div class="notification is-success">
+                <div class="heading is-size-5 has-text-centered">Hundreds</div>
+                <div class="title is-1 has-text-centered" id = "hundreds-output">0</div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Fiftys</p>
+                <p class="title is-1 has-text-centered" id = "fiftys-output">0</p>
+              </div>
+            </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Twentys</p>
+                <p class ="title is-1 has-text-centered" id = "twentys-output">0</p>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Tens</p>
+                <p class="title is-1 has-text-centered" id = "tens-output">0</p>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Fives</p>
+                <p class="title is-1 has-text-centered" id = "fives-output">0</p>
+                </div>
+              </div>
+             </div>
+           </div>
+            
+          <div class="container">
+            <div class="columns">
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Dollars</p>
+                <p class="title is-1 has-text-centered" id = "dollars-output">0</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Quarters</p>
+                <p class="title is-1 has-text-centered" id = "quarters-output">0</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Dimes</p>
+                <p class="title is-1 has-text-centered" id = "dimes-output">0</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Nickles</p>
+                <p class="title is-1 has-text-centered" id = "nickels-output">0</p>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-success">
+                <p class="heading is-size-5 has-text-centered">Pennies</p>
+                <p class="title is-1 has-text-centered" id = "pennies-output">0</p>
+                </div>
+              </div>
+
+               </div>
+              </div>
+             </div>
+            </div>
+
+  <script src="main.js" charset="utf-8"></script>
+      
+    </body>
+</html>
